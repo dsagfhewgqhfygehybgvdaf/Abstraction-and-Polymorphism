@@ -1,8 +1,8 @@
 class book:
+    is_borrowed=False
     def __init__(self,title,author):
         self.title=title
         self.author=author
-        is_borrowed=False
     def borrow(self):
         a=input("Would you like to borrow this book?y/n")
         while True:
@@ -15,6 +15,7 @@ class book:
                 break
             else:
                 print("Please try again")
+    
     def return_book(self):
         b=input("Would you like to return this book?y/n")
         while True:
